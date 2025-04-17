@@ -39,8 +39,10 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-.header-container {
+.header {
     border-bottom: 1px solid #E7E9FC;
+}
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -106,7 +108,7 @@ color: #404bbf;
 .title {
     background-color: #2e2f42;
 }
-.title-container {
+.title {
     padding: 188px 0;
 }
 .title-text {
@@ -140,7 +142,7 @@ color: #404bbf;
 .title-btn:focus {
     background-color:#404bbf;
 }
-.container-feature {
+.feature {
     padding: 120px 0;
 }
 .feature-title-text {
@@ -158,9 +160,12 @@ color: #404bbf;
 .feature-list {
     display: flex;
     gap: 24px;
+}
+.feature-list-ithem {
     width: calc((100% - 24 * 3) / 4);
 }
 .feature-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -175,7 +180,7 @@ color: #404bbf;
 .contacts {
     background-color: #F4F4FD;
 }
-.container-contacts {
+.contacts {
     padding: 120px 0;
 }
 .contacts-list {
@@ -183,7 +188,7 @@ color: #404bbf;
     gap: 24px;
 }
 .contacts-card {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 .contacts-title-text {
     margin-bottom: 72px;
@@ -210,11 +215,12 @@ color: #404bbf;
     text-align: center;
 }
 .contacts-list-ithem {
+    flex-basis: calc((100% - 3 * 24px) / 4)
     border-radius: 0 0 4px 4px;;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
 }
-.container-portfolio {
+.portfolio {
     padding: 120px 0;
 }
 .portfolio-title-text {
@@ -232,7 +238,9 @@ color: #404bbf;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    flex-basis: calc((100% - 24 * 3) / 4);
+}
+.portfolio-list-ithem {
+    flex-basis: calc((100% - 24 * 2) / 3);
 }
 .portfolio-cards {
     border-bottom: 1px solid #e7e9fc;
@@ -257,7 +265,7 @@ color: #404bbf;
     letter-spacing: 0.02em;
 }
 .footer {
-    padding: 100px;
+    padding: 100px 0;
     background-color: #2e2f42;
 }
 .footer-logo {
